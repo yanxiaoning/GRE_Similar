@@ -37,7 +37,10 @@ public class MainActivity extends Activity implements OnItemClickListener, OnIte
 		super.onCreate(savedInstanceState);
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
-		
+		int duration = Toast.LENGTH_LONG;
+
+		Toast toast = Toast.makeText(this, "长按：形近词" + '\n' + "短按：翻译", duration);
+		toast.show();
 		
 		 WordLists wl = WordLists.getInstance();
 		
